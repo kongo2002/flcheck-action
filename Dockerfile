@@ -1,7 +1,7 @@
 FROM alpine:latest
 
 LABEL com.github.actions.name="flcheck"
-LABEL com.github.actions.description="Lint your flutter apps with flcheck"
+LABEL com.github.actions.description="Check your flutter app dependencies with flcheck"
 LABEL com.github.actions.icon="feather"
 LABEL com.github.actions.color="blue"
 
