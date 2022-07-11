@@ -12,5 +12,4 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - uses: kongo2002/flcheck-action@master
+    - uses: kongo2002/flcheck-action@${{ github.sha }}
