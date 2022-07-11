@@ -1,0 +1,31 @@
+name: 'flcheck'
+description: 'Check your flutter app dependencies with flcheck'
+author: 'kongo2002'
+
+branding:
+  icon: 'feather'
+  color: 'blue'
+
+inputs:
+  appDir:
+    description: 'Root directory of the flutter app(s)'
+    required: false
+    default: '.'
+  config:
+    description: 'Configuration file for flcheck'
+    required: false
+    default: 'flcheck.yaml'
+  command:
+    description: 'flcheck command to execute'
+    required: false
+    default: '--help'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - '--dir'
+    - ${{ inputs.appDir }}
+    - '--config'
+    - ${{ inputs.config }}
+    - ${{ inputs.command }}
