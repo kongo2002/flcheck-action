@@ -11,5 +11,7 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - uses: actions/checkout@v3
-    - uses: kongo2002/flcheck-action@$GITHUB_SHA
+    - name: checkout repository
+      uses: actions/checkout@v3
+    - name: run local action
+      uses: ./
