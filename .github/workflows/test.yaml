@@ -17,5 +17,5 @@ jobs:
       uses: ./
       with:
         config: ./tests/flcheck.yaml
-        appDir: ./tests
+        appDir: "$PWD/tests"
         command: validate
