@@ -1,0 +1,21 @@
+package_types:
+  main:
+    dir_prefix: 'main'
+    includes:
+      - app
+
+  app:
+    dir_prefix: 'app_'
+    includes:
+      - shared
+
+  shared:
+    dir_prefix: 'shared_'
+    includes:
+      - shared
+      - package
+
+  package:
+    dir_prefix: 'pkg_'
+    includes:
+      - package

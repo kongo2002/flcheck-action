@@ -1,0 +1,21 @@
+name: Workflow
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+    - name: Run local action
+      uses: ./
+      with:
+        config: ./tests/flcheck.yaml
+        appDir: ./tests
+        command: validate
