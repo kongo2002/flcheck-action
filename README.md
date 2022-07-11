@@ -58,8 +58,7 @@ jobs:
 
 | input | description | default |
 | ----- | ----------- | ------- |
-| `command` | command to execute (commonly `validate`, see
-[commands][commands]) | `--help` |
+| `command` | command to execute (commonly `validate`, see [commands][commands]) | `--help` |
 | `config` | path to the flcheck configuration file | `flcheck.yaml` |
 | `appDir` | root directory to recursively search for flutter packages | `.` |
 
