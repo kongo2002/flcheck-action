@@ -17,5 +17,5 @@ jobs:
       uses: ./
       with:
         config: ./tests/flcheck.yaml
-        appDir: ${{ github.workspace }}/tests
+        appDir: ./tests
         command: validate
