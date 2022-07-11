@@ -1,0 +1,9 @@
+name: main
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: 0.17.0
+
+  pkg_something:
+    path: ../pkg_something

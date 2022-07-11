@@ -11,7 +11,11 @@ jobs:
     runs-on: ubuntu-20.04
 
     steps:
-    - name: checkout repository
+    - name: Checkout repository
       uses: actions/checkout@v3
-    - name: run local action
+    - name: Run local action
       uses: ./
+      with:
+        config: ./tests/flcheck.yaml
+        appDir: ./tests
+        command: validate
