@@ -3,7 +3,7 @@
 *flcheck* is a CLI tool to check, validate and analyze flutter (dart) package
 dependencies.
 
-[![flcheck-action](https://github.com/kongo2002/flcheck-action/actions/workflows/test.yml/badge.svg)][actions]
+[![flcheck-action](https://github.com/kongo2002/flcheck-action/actions/workflows/test.yaml/badge.svg)][actions]
 
 The tool is meant to assist when creating flutter/dart applications that are
 built by assembling multiple packages into one (or multiple) applications,
