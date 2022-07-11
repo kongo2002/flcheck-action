@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
-    - uses: actions/kongo2002/flcheck-action
+    - uses: kongo2002/flcheck-action
