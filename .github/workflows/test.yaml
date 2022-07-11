@@ -17,5 +17,5 @@ jobs:
       uses: ./
       with:
         config: ./tests/flcheck.yaml
-        appDir: "$PWD/tests"
+        appDir: ${GITHUB_WORKSPACE}/tests
         command: validate
