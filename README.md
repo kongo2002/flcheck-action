@@ -1,7 +1,7 @@
 # flcheck action
 
-*flcheck* is a CLI tool to check, validate and analyze flutter (dart) package
-dependencies.
+[flcheck][flcheck] is a CLI tool to check, validate and analyze flutter (dart)
+package dependencies.
 
 [![flcheck-action](https://github.com/kongo2002/flcheck-action/actions/workflows/test.yaml/badge.svg)][actions]
 
@@ -41,7 +41,7 @@ on:
     branches: [ master ]
 jobs:
   test:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-24.04
     steps:
     - name: Checkout repository
       uses: actions/checkout@v3
@@ -65,3 +65,4 @@ jobs:
 
 [actions]: https://github.com/kongo2002/flcheck-action/actions/
 [commands]: https://github.com/kongo2002/flcheck#running
+[flcheck]: https://github.com/kongo2002/flcheck
