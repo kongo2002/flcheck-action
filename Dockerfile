@@ -9,7 +9,7 @@ LABEL repository="https://github.com/kongo2002/flcheck-action"
 
 RUN apk add --no-cache openssl
 
-ARG VERSION=1.2.0
+ARG VERSION=1.2.1
 
 ADD https://github.com/kongo2002/flcheck/releases/download/v$VERSION/flcheck-v$VERSION-x86_64-unknown-linux-musl.tar.gz /tmp
 
